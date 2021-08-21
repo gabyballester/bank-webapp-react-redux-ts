@@ -26,12 +26,11 @@ export const withdrawMoney = (amount: Amount) => {
   };
 };
 
-export const bankrupt = (amount: Amount) => {
+export const bankrupt = () => {
   // amount es tipo number
   return (dispatch: Dispatch<Action>) => {
     dispatch({
       type: ActionType.BANKRUPT,
-      payload: amount,
     });
   };
 };
